@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main() {
+int main(void) {
   
   printf("Size of variable a : %ld byte(s)\n",sizeof(char));
   printf("Size of int data type : %ld byte(s)\n",sizeof(int));
