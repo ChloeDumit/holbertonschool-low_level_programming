@@ -1,9 +1,11 @@
 #include <stdio.h>
-
-int main ()
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-  freopen ("myfile.txt","w",stdout);
-  printf ("and that piece of art is useful\" - Dora Korpar, 2015-10-19");
-  fclose (stdout);
-  return 0;
+fprintf(stderr,"This is message 2\n");
+return (1);
 }
