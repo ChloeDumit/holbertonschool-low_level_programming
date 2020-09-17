@@ -1,4 +1,4 @@
-B#include <stdio.h>
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -6,10 +6,6 @@ B#include <stdio.h>
  */
 int main(void)
 {
-char num;
-num = 0;
-for (num = '0' ; num <= '9' ; num++)
-putchar (num);
-putchar ('\n');
+  printf(%d
 return (0);
 }
