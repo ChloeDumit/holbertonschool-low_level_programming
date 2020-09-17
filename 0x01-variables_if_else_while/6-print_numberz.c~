@@ -1,0 +1,13 @@
+5-print_numbers.c:9: WARNING: please, no spaces at the start of a line
+  5-print_numbers.c:10: WARNING: Missing a blank line after declarations
+  5-print_numbers.c:10: WARNING: please, no spaces at the start of a line
+  5-print_numbers.c:10: WARNING: suspect code indent for conditional statements (2, 4)
+  5-print_numbers.c:11: WARNING: please, no spaces at the start of a line
+								       5-print_numbers.c:12: WARNING: please, no spaces at the start of a line
+								       5-print_numbers.c:13: WARNING: please, no spaces at the start of a line5-print_numbers.c:9: WARNING: please, no spaces at the start of a line
+								       5-print_numbers.c:10: WARNING: Missing a blank line after declarations
+								       5-print_numbers.c:10: WARNING: please, no spaces at the start of a line
+								       5-print_numbers.c:10: WARNING: suspect code indent for conditional statements (2, 4)
+								       5-print_numbers.c:11: WARNING: please, no spaces at the start of a line
+																	    5-print_numbers.c:12: WARNING: please, no spaces at the start of a line
+																	    5-print_numbers.c:13: WARNING: please, no spaces at the start of a line
