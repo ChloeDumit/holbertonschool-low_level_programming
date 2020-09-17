@@ -7,8 +7,12 @@
 int main(void)
 {
 char c;
-for (c = '00'; c <= '99'; c++)
+char C = ',';
+char s = '\0';
+for (c = '0'; c <= '9'; c++)
 putchar (c);
-putchar ('/n')
+putchar (C);
+putchar (s);
+putchar ('\n');
 return (0);
 }
