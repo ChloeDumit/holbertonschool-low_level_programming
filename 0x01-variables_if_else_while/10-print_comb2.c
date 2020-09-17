@@ -1,21 +1,34 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - program that prints the numbers from 00 to 99
+ * Numbers must be separated by ,followed by a space
+ * Numbers should be printed in ascending order with 2 digits
+ * You can only use the putchar function
+ * Return: 0
  */
+
 int main(void)
 {
-  int c;
-  for (c = 0; c <= 100; c++)
+  int n1 = 48;
+  int n2 = 48;
+  int com = 44;
+  while (n1 <= 57)
     {
-      putchar (c);     
- if (c != 57)
+      n2 = 48;
+      while (n2 <= 57)
 	{
-	  putchar (44);
-	  putchar (32);
+	  putchar(n1);
+	  putchar(n2);
+	  if (n1 != 57 || n2 != 57)
+	    {
+	      putchar(com);
+	      putchar(32);
+	    }
+	  n2 += 1;
 	}
+      n1 += 1;
     }
-  putchar ('\n');
+  putchar('\n');
   return (0);
 }
