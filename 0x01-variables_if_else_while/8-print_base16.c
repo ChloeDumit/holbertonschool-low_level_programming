@@ -11,7 +11,7 @@ char C;
 for (c = '0'; c <= '9'; c++)
 putchar (c);
 for (C = 'a'; C <= 'f'; C++)
-putchar (C); 
+putchar (C);
 putchar ('\n');
 return (0);
 }
