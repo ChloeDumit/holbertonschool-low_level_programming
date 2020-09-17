@@ -6,9 +6,16 @@
  */
 int main(void)
 {
-char c;
-for (c = '00'; c <= '99'; c++)
-putchar (c);
-putchar ('/n')
-return (0);
+  int c;
+  for (c = 0; c <= 100; c++)
+    {
+      putchar (c);     
+ if (c != 57)
+	{
+	  putchar (44);
+	  putchar (32);
+	}
+    }
+  putchar ('\n');
+  return (0);
 }
