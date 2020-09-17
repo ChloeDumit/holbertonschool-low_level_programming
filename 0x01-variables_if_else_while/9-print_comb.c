@@ -1,4 +1,4 @@
-#include <stdio.h>
+include <stdio.h>
 /**
  * main - Entry point
  *
@@ -6,14 +6,15 @@
  */
 int main(void)
 {
-char c;
-char C = ',';
-char s = '\0';
-for (c = '0'; c <= '9'; c++)
-  if (c < 10){
+int c;
+for (c = 48; c <= 57; c++)
+{
 putchar (c);
-putchar (C);
-putchar (s);
+if (c != 57)
+{
+putchar (44);
+putchar (32);
+}
 }
 putchar ('\n');
 return (0);
