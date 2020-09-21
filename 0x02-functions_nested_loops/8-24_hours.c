@@ -1,17 +1,21 @@
-
-
-
-
-
-
-int hours = 0;
-int minutes = 0;
-
-while(hours <= 23) {
-  while(minutes <= 59) {
-    printf("%02d:%02d\n", hours, minutes);
-    minutes++;
-  }
-  hours++;
-  minutes = 0
+#include "holberton.h"
+#include <stdio.h>
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+void jack_bauer(void)
+{
+  int n1;
+  int n2;
+  for (n1 = 0; n1 < 24; n1++){
+    for (n2 = 0; n2 < 60; n2++){
+      _putchar (n1 % 10 + '0');
+      _putchar (n1 % 10 + '0');
+      _putchar (':');
+      _putchar (n2 % 10 + '0');
+      _putchar (n2 % 10 + '0');
     }
+  }
+}
