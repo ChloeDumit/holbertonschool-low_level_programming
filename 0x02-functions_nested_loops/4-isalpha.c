@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * _isalpha - check the c is letter
+ * @c: the character checked
+ * Return: 1 if lowercase or uppercase letter 0 otherwise
  */
 int _isalpha(int c)
 {

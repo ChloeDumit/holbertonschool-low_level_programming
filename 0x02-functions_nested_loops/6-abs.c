@@ -1,9 +1,10 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * main - check the code for Holberton School students.
+ * _abs - check positive, negative or zero
+ * @n: the number to be checked
  *
- * Return: Always 0.
+ * Return: return absolute value
  */
 int _abs(int x)
 {
