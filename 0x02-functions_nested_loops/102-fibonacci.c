@@ -7,9 +7,9 @@
 int main(void)
 {
 long int i, t1 = 1, t2 = 2, nextTerm;
-for (i = 1; i <= 50; i++)
+for (i = 0; i < 50; i++)
 {
-if (i >= 50)
+if (i >= 49)
 {
 printf("%ld\n", t1);
 }
