@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ *main-
+ *
+ *Return always 0
+ */
 int main(void)
 {
 long int i, t1 = 1, t2 = 2, nextTerm;
