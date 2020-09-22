@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
- *main-
+ * main - fibonacci
  *
- *Return always 0
+ * Return always 0
  */
 int main(void)
 {
 long int i, t1 = 1, t2 = 2, nextTerm;
-for (i = 1; i <= 49; i++)
+for (i = 1; i <= 50; i++)
 {
-if (i >= 49)
+if (i >= 50)
 {
 printf("%ld\n", t1);
 }
