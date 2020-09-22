@@ -14,9 +14,15 @@ int largest;
 
 if (a >= b && a > c)
 {
+if (a > c) {
+
 largest = a;
 }
-else if (b >= a && b > c)
+else {
+largest = c;
+}
+}
+else if (b > c)
 {
 largest = b;
 }
