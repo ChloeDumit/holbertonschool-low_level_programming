@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * main - check the code for Holberton School students.
+ * jack_bauer - prints all minutes of the dat.
  *
  * Return: Always 0.
  */
