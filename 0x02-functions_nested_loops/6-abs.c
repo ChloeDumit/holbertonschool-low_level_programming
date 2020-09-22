@@ -1,19 +1,16 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * _abs - check positive, negative or zero
- * @n: the number to be checked
- *
- * Return: return absolute value
- */
-int _abs(int x)
+* _abs - check positive, negative or zero
+* @n: the number to be checked
+*
+* Return: return absolute value
+*/
+int _abs(int n)
 {
-if (x < 0)
+if (n >= 0)
 {
-return ((-x));
+return (n);
 }
-else
-{
-return ((x));
-}
+return (n * -1);
 }
