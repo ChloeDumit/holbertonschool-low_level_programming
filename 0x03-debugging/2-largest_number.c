@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * largest_number - returns the largest of 3 numbers
@@ -10,26 +11,20 @@
 
 int largest_number(int a, int b, int c)
 {
-int largest;
+  int largest;
 
-if (a >= b && a > c)
-{
-if (a > c) {
+  if (a > b && a > c)
+    {
+      largest = a;
+    }
+  else if (b > a && b > c)
+    {
+      largest = b;
+    }
+  else
+    {
+      largest = c;
+    }
 
-largest = a;
-}
-else {
-largest = c;
-}
-}
-else if (b > c)
-{
-largest = b;
-}
-else
-{
-largest = c;
-}
-
-return (largest);
+  return (largest);
 }
