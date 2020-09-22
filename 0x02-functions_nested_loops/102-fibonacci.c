@@ -8,10 +8,10 @@ if (i >= 50)
 {
 printf("%ld\n", t1);
 }
-printf("%ld, ", t1);  
+printf("%ld, ", t1);
 nextTerm = t1 + t2;
 t1 = t2;
 t2 = nextTerm;
 }
-return 0;
+return (0);
 }
