@@ -1,9 +1,9 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * main - print the first 50 fibonacci numbers
+ * main - print the first 50 fibonacci numbers.
  *
- * Return Always 0.
+ * Return nothing.
  */
 int main(void)
 {
