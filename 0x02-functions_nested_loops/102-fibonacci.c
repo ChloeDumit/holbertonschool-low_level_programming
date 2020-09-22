@@ -1,14 +1,18 @@
-#include "holberton.h"
 #include <stdio.h>
 int main(void)
 {
-int i, t1 = 1, t2 = 2, nextTerm;
+long int i, t1 = 1, t2 = 2, nextTerm;
 for (i = 1; i <= 50; ++i)
 {
-printf("%d, ", t1);
-nextTerm = t1 + t2;
-t1 = t2;
-t2 = nextTerm;
+    nextTerm = t1 + t2;
+    t1 = t2;
+    t2 = nextTerm;
+    if (i >= 50)
+      {
+	printf("%ld\n", t1);
+      }
+printf("%ld, ", t1);
 }
-return (0);
+
+  return 0;
 }
