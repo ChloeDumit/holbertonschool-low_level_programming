@@ -7,12 +7,19 @@
  */
 void print_diagonal(int n)
 {
-  char i;
-  for (int i=0; i<6; i++)
+  char espacio = 32;
+  int i;
+  if (n > 0)
     {
-      for (int j=0; j<i; j++)
+      for (i = 0; i <= n; i++)
 	{
-	  System.out.print("*");
+	  _putchar(espacio * i);
+	  _putchar(92);
+	  _putchar('\n');
 	}
-      System.out.println("");
     }
+  else 
+    {
+      _putchar('\n');
+    }
+}
