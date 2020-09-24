@@ -7,19 +7,23 @@
  */
 void print_diagonal(int n)
 {
-  char espacio = 32;
-  int i;
-  if (n > 0)
-    {
-      for (i = 0; i <= n; i++)
-	{
-	  _putchar(espacio * i);
-	  _putchar(92);
-	  _putchar('\n');
-	}
-    }
-  else 
-    {
-      _putchar('\n');
-    }
+int m, i;
+m = 0;
+if (n > 0)
+{
+while (m != n)
+{
+for (i = 0; i < m; i++)
+{
+_putchar(' ');
+}
+_putchar('\\');
+_putchar('\n');
+m++;
+}
+}
+else
+{
+_putchar('\n');
+}
 }
