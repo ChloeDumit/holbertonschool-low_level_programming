@@ -4,6 +4,7 @@
  *print_line - prints a line in the terminal
  *@n - number of times the character should be printed
  *Return - nothing
+ *
  */
 void print_line(int n)
 {
