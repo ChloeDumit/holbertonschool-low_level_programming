@@ -3,7 +3,7 @@
 /**
  * print_most_numbers - prints numbers from 0 to 9
  *@ch - number
- * Return: Always 0 (Success)
+ * Return: Nothing
  */
 void print_most_numbers(void)
 {
