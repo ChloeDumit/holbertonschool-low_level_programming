@@ -1,9 +1,7 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
- *print_triangle -prints a triangle, followed by a new line.
- *@size - size of triangle
- *Return: Always o.
+ *print_triangle - print a triangle
+ *@size: integer
  */
 
 void print_triangle(int size)
