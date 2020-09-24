@@ -15,13 +15,13 @@ for (col = 1; col <= size; col++)
 {
 if (col <= size - row)
 _putchar(' ');
-else 
+else
 _putchar('#');
 }
 _putchar('\n');
-} 
 }
-else 
+}
+else
 {
 _putchar('\n');
 }
