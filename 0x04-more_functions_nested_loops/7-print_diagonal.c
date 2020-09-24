@@ -1,9 +1,8 @@
 #include "holberton.h"
 #include <stdio.h>
-/*
- *print_diagonal - prints a diagonal in the terminal
- *@n number of times the character should be printed
- *Return nothing
+/**
+ *print_diagonal - draws diagonal line
+ * @n: number of is requested by main.c
  */
 void print_diagonal(int n)
 {
