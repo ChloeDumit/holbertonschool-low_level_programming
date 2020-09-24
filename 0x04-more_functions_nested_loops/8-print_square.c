@@ -1,9 +1,8 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
- *print_square - prints a square in the terminal
- *@size - number of times the character should be printed
- *Return nothing
+ * print_square -  checks for checks for a digit (0 through 9).
+ * @size: size -  Variable
+ * Return: Always 0.
  */
 void print_square(int size)
 {
