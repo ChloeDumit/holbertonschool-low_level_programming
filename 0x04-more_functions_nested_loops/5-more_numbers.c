@@ -1,17 +1,19 @@
 #include "holberton.h"
 /**
- * print_alphabet_x10 - print the character from a to z 10 times
+ * print_more_numbers - print the character from 0 to 14, 10 times
  */
 void more_numbers(void)
 {
-  char ch, c;
+int ch;
 int i;
- int dec = ( i / 10);
- int uni = ( i % 10);
-for (i = 0; i <= 14; i++)
+for (i = 0; i <= 10; i++)
 {
-  if (i > 9)
-    {
-      _putchar(dec);
-      _putchar(uni);
-    }
+for (ch = 0; ch < 15; ch++)
+{
+if (ch > 9)
+_putchar((ch / 10) + '0');
+_putchar((ch % 10) + '0');
+}
+_putchar('\n');
+}
+}
