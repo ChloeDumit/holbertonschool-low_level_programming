@@ -9,7 +9,7 @@ for (ch = '0'; ch <= '9'; ch++)
 {
 if (ch == '2' || ch == '4')
 continue;
-putchar(ch);
+_putchar(ch);
 }
-putchar('\n');
+_putchar('\n');
 }
