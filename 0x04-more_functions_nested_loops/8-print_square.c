@@ -1,6 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
-/*
+/**
  *print_square - prints a square in the terminal
  *@size - number of times the character should be printed
  *Return nothing
