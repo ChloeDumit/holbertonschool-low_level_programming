@@ -1,21 +1,23 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  *
  *
  *
  */
 void print_rev(char *s)
-{
-  int temp, start, end;
-  start = 0;
-end =
-  while (start < end)
-    {
-      temp = arr[start];   
-      arr[start] = arr[end];
-      arr[end] = temp;
-      start++;
-      end--;
-    }   
-}     
- 
+{ 
+  int i, j, k;
+  char rev[150];
+ for (i = 0; s[i] != '\0'; i++)
+   {
+     k = i;
+   }
+ for (j = 0; j <= i - 1; j++)
+  {
+    rev[j] = s[k];
+    k--;
+}
+    printf("%s\n", rev);
+  
+}
