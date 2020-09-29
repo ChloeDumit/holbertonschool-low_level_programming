@@ -7,16 +7,15 @@
  */
 void print_rev(char *s)
 {
-int i, j, k;
-char rev[150];
+int i, letter, rev;
 for (i = 0; s[i] != '\0'; i++)
 {
-k = i;
 }
-for (j = 0; j <= i - 1; j++)
+rev = 0;
+for (rev = i - 1; rev >= 0; rev--)
 {
-rev[j] = s[k];
-k--;
+letter = s[rev];
+_putchar(letter);
 }
-printf("%s\n", rev);
+_putchar('\n');
 }
