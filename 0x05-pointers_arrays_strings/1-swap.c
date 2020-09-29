@@ -3,6 +3,8 @@
  *swap_int - swap variables
  *@a: a
  *@b: b
+ *
+ *Return - nothing
  */
 void swap_int(int *a, int *b)
 {   
