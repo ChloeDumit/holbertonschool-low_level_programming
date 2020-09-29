@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- *swap_int - swap variables
+ *swap_int - swap integer
  *@a: a
  *@b: b
  *
- *Return - nothing
+ *
  */
 void swap_int(int *a, int *b)
 {   
