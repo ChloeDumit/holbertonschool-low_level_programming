@@ -3,8 +3,8 @@
 /**
  *_strlen - return lenght of string
  *@s: string
- *Return - lenght of string
- */
+ *Return - i
+ **/
 int _strlen(char *s)
 {
 int i = 0;
