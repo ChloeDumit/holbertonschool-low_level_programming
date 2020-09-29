@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  *_strlen - return lenght of string
- *@s: string
- *Return - i
+ *@s: pointer s
+ *Return: i
  **/
 int _strlen(char *s)
 {
