@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *re_string - reverse strign
+ *rev_string - reverse string
  *@s: s
  *
  */
@@ -17,5 +17,5 @@ letter = s[i];
 s[i] = s[rev];
 s[rev] = letter;
 rev++;
-}    
+}
 }
