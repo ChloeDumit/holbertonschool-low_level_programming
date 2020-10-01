@@ -1,9 +1,10 @@
 #include "holberton.h"
 /**
- *
- *
+ *rot13 - convertes string into rot13
+ *@s: s
+ *Return: s
  */
-char *rot13(char *)
+char *rot13(char *s)
 {
 	int i, j;
 	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
