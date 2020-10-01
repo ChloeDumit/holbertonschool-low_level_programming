@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * leet - Entry point
  * Description: Convert a string to leet code
@@ -22,4 +21,4 @@ char *leet(char *s)
 	}
 	return (s);
 }
-2020 GitHub, Inc.
+
