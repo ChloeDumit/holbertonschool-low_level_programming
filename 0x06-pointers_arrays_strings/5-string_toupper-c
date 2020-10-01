@@ -1,0 +1,7 @@
+B#include "holberton.h"
+/**
+*string_toupper - changes all lowercase letter to uppercase
+*
+*
+*Return: change letters
+**/
