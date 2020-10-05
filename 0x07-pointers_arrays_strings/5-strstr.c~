@@ -1,0 +1,23 @@
+#include "holberton.h"
+/**
+ *
+ *
+ **/
+char *_strstr(char *haystack, char *needle)
+{
+	const char *hstart = haystack;
+	const char *nstart = needle;
+do
+{
+	if (*haystack == *needle)
+	{
+		haystack++, needle++;
+	}
+	else
+	{
+		needle = nstart, haystack++;
+	}
+}
+while (*needle && *haystack);
+return !*needle ? (haystack - hstart) - (needle - nstart) : -1;
+}
