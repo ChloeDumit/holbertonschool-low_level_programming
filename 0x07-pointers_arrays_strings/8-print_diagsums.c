@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 #include <stdio.h>
 /**
  * print_diagsums - check the code for Holberton School students.
