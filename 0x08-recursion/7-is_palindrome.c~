@@ -1,0 +1,36 @@
+#include "holberton.h"
+/**
+ *is_palindrome - find palindrome
+ *@s: s
+ *Return: 1 or 0
+ */
+int is_palindrome(char *s)
+{
+	int n;
+	for (n = 0; s[n] != '\0'; n++)
+		{
+		}
+		     if (n == 0)
+			     return (1);
+		     else
+			     return (isPalRec(s, 0, n - 1));
+
+}
+
+/**
+ *isPalRec - palrec
+ *@i: i
+ *@s: s
+ *@e: e
+ *Return: 1 or 0
+ */
+int isPalRec(char *s, int i, int e)
+{
+	if (i == e)
+		return (1);
+	if (s[i] != s[e])
+		return (0);
+	if (i < e + 1)
+		return (isPalRec(s, i + 1, e - 1));
+	return 1;
+}

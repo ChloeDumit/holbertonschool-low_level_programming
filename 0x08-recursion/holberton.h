@@ -1,3 +1,5 @@
+int isPalRec(char s, int i, int e);
+int is_palindrome(char *s);
 int isPrime(int n, int i);
 int _calc_sqrt(int aux, int n);
 int is_prime_number(int n);
