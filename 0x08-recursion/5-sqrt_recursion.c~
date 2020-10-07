@@ -1,0 +1,26 @@
+#include "holberton.h"
+/**
+ *_sqrt_recursion - returns the natural square root of a number
+ *@n: number
+ *Return: square root
+ */
+int _sqrt_recursion(int n)
+{
+	int aux;
+       if(aux * aux == n)
+       {
+	       return(aux);
+       }
+		else
+		{
+			if(aux * aux > n)
+			{
+				return (_sqrt_recursion(n, aux / 2));
+			}
+
+			else
+			{
+				return (_sqrt_recursion(n, aux + 1));
+			}
+		}
+	}
