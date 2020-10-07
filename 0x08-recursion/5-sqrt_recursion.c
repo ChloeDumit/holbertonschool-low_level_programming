@@ -15,7 +15,14 @@ int _sqrt_recursion(int n)
 		return (-1);
 	}
 	return (_calc_sqrt(1, n));
-       }
+}
+
+/**
+ *_calc_sqrt - returns the natural square root of a number
+ *@n: number
+ *@aux: aux
+ *Return: square root
+ */
 int _calc_sqrt(int aux, int n)
 {
 	if (aux * aux == n)
@@ -28,7 +35,7 @@ int _calc_sqrt(int aux, int n)
 	}
 	else
 	{
-		return(_calc_sqrt(aux + 1, n));
+		return (_calc_sqrt(aux + 1, n));
 	}
 
 }
