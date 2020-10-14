@@ -12,14 +12,15 @@ char *_strdup(char *str)
 	char *s;
 	int i = 0, c = 0;
 
+	if (str == 0)
+        {
+                return (NULL);
+        }
 	while (str[c] != 0)
 	{
 		c++;
 	}
-	if (str == 0)
-	{
-		return (NULL);
-	}
+	
 	s = (char *)malloc(c + 1 * sizeof(char));
 	if (s == 0)
 	{
@@ -31,5 +32,4 @@ char *_strdup(char *str)
 
 	}
 return (s);
-free(s);
 	}
