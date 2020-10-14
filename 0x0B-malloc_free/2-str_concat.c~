@@ -1,0 +1,44 @@
+#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/**
+ *_strdup - a pointer to newly allocated space in memory with a copy of string
+ *@str: string
+ *Return: s
+ */
+char *str_concat(char *s1, char *s2)
+{
+	char *s;
+	int i, l = 0, x = 0;
+	if (s1 == 0)
+	{
+		return (NULL);
+	}
+	if (s2 == 0)
+	{
+		return(NULL);
+	}
+	while (s1[l] != 0)
+	{
+		++l;
+	}
+	while (s2[x] != 0)
+	{
+		x++;
+	}
+	s = (char *) malloc((l + x) * sizeof(char));
+
+        while (s1[l] != '\0')
+        {
+                ++l;
+        }
+        for (i = 0; s2[i] != '\0'; ++i, ++l)
+        {
+                s1[l] = s2[i];
+        }
+        s1[l] = '\0';
+	s = s1;
+	return(s);
+}
