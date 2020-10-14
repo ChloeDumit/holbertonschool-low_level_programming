@@ -5,12 +5,13 @@
  *alloc_grid - returns a 2d aray
  *@width: width
  *@height: height
- *Return: array 
+ *Return: array
 */
 int **alloc_grid(int width, int height)
 {
 	int i, j;
 	int **array;
+
 	if (width <= 0)
 	{
 		return (NULL);
@@ -25,7 +26,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	for(i = 0; i < height; i++)
+	for (i = 0; i < height; i++)
 	{
 		array[i] = malloc(width * sizeof(int));
 		if (array[i] == NULL)
