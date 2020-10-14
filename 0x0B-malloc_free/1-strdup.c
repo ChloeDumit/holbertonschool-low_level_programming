@@ -28,4 +28,8 @@ char *_strdup(char *str)
 
 	}
 	return (s);
+	if(s == 0)
+	{
+		return (NULL);
+	}
 }
