@@ -4,8 +4,9 @@
 #include <string.h>
 
 /**
- *_strdup - a pointer to newly allocated space in memory with a copy of string
- *@str: string
+ *str_concat- concatenates two strings
+ *@s1: s1
+ *@s2: s2
  *Return: s
  */
 char *str_concat(char *s1, char *s2)
