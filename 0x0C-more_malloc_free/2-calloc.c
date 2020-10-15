@@ -7,7 +7,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 char *new;
-unsigned int i;
+int i;
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
@@ -18,10 +18,10 @@ unsigned int i;
 			     return (NULL);
 		     }
 		     i = 0;
-		     while (i < nmemb * size)
+		     for (i = (i - 1); i >= 0; i--)
 		     {
 			     new[i] = '\0';
-			     i++;
+			     
 }
 		     return(new);
 }
