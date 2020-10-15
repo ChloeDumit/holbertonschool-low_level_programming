@@ -6,21 +6,22 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *new;
-	int i;
+	int *new = NULL;
+unsigned int i;
 	i = 0;
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
-	new = malloc(nmemb * sizeof(size));
+	new = malloc(nmemb * size);
 		     if (new == 0)
 		     {
 			     return (NULL);
 		     }
-		     for (i = (i - 1); i >= 0; i--)
+		     while (i < nmemb * size)
 		     {
-			     new[i] = 0;
-		     }
+			     new[i] = '\0';
+			     i++;
+}
 		     return(new);
 }
