@@ -22,7 +22,7 @@ int (*func)(int, int);
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*argv[2] == '/' || *argv[2] == '%') && *argv[3] == 0)
+	if ((*argv[2] == '/' || *argv[2] == '%' ) && atoi(argv[3]) == 0)
 	{
 		printf("Error\n");
 		exit(100);
