@@ -2,9 +2,10 @@
 #include "function_pointers.h"
 
 /**
- * is_98 - check if a number is equal to 98
- * @elem: the integer to check
- *
+ * int_index - check if a number is equal to 98
+ * @array: the integer to check
+ *@size: size
+ *@cmp: cmp
  * Return: 0 if false, something else otherwise.
  */
 
