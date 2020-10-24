@@ -19,9 +19,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (i > 0 && separator)
 	{
 		printf("%s%i", separator, va_arg(list, int));
-	}
+	}else
+		{
 	printf("%d", va_arg(list, int));
-	}
+		}
+}
 }
 			va_end(list);
 			printf("\n");
