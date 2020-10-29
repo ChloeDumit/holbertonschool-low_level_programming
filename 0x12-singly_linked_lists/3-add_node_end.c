@@ -4,7 +4,7 @@
 #include "lists.h"
 /**
  *add_node_end - add a node at the end of the list
- *@head: head element
+ *@head:  head element
  *@str: string
  *Return: address of new element
  */
