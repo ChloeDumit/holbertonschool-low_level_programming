@@ -3,10 +3,8 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- *add_node - add a node at the head of the list
+ *free_list - free list
  *@head: head element
- *@str: string
- *Return: new node
  */
 void free_list(list_t *head)
 {
