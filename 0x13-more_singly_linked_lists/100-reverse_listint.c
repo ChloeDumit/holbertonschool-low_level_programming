@@ -4,10 +4,9 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - delete node at index given.
+ *reverse_listint - delete node at index given.
  *@head: head
- *@index: index
- * Return: Always 0.
+ *Return: Always 0.
  */
 listint_t *reverse_listint(listint_t **head)
 {
