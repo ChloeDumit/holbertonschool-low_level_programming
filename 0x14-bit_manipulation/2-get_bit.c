@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
+ *get_bit - get bit
+ *@n: n
+ *@index: index
+ *Return: value
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
