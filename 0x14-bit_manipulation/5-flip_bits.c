@@ -1,22 +1,6 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- *count - count
- *@a: count
- *Return: counter
- */
-unsigned int count(unsigned int a)
-{
-	int counter = 0;
-
-	while (a != 0)
-	{
-		counter++;
-		a &= (a - 1);
-	}
-	return (counter);
-}
-/**
  *flip_bits - flip bits
  *@n: n
  *@m: m
@@ -24,5 +8,13 @@ unsigned int count(unsigned int a)
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	return (count(n ^ m));
+	unsigned long int a = n ^ m;
+	int counter = 0;
+
+        while (a != 0)
+        {
+                counter++;
+                a &= (a - 1);
+        }
+        return (counter);
 }
