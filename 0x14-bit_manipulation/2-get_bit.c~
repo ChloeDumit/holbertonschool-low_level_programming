@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include "holberton.h"
+/**
+ */
+int get_bit(unsigned long int n, unsigned int index)
+{
+	char bits;
+
+	index = 0;
+	bits = n & index;
+
+	if (n == 0)
+	{
+		_putchar('0');
+	}
+	else if (n == 1)
+	{
+		_putchar('1');
+	}
+	else
+	{
+		get_bit(n >> 1, index);
+		return (bits);
+	}
+
+
+	return (-1);
+}
