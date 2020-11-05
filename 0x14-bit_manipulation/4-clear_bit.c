@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- *set_bit - set bit
+ *clear_bit - set bit
  *@n: n
  *@index: index
  *Return: 1
