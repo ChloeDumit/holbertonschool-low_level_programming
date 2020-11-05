@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- *unsigned int binary_to_uint - convert binary to unsigned int
+ *binary_to_uint - convert binary to unsigned int
  *@b: bit
  *Return: converted number
  */
