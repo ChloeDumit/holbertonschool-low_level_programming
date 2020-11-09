@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- *read_textfile - read a file
+ *create_file - read a file
  *@filename: filename
- *@letters: letters
+ *@text_content: letters
  *Return: number of letters
  */
 int create_file(const char *filename, char *text_content)
@@ -30,7 +30,7 @@ int create_file(const char *filename, char *text_content)
 	{
 		lenght++;
 	}
-	fdwrite = write (fd, text_content, lenght);
+	fdwrite = write(fd, text_content, lenght);
 	if (fdwrite < 0)
 	{
 		return (-1);
