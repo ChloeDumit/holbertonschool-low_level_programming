@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- *read_textfile - read a file
+ *append_text_to_file - read a file
  *@filename: filename
- *@letters: letters
+ *@text_content: letters
  *Return: number of letters
  */
 int append_text_to_file(const char *filename, char *text_content)
@@ -21,10 +21,10 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 	}
 	if (text_content == NULL)
-        {
-         text_content = "";
-	 lenght = 0;
-        }
+	{
+		text_content = "";
+		lenght = 0;
+	}
 	while (text_content[lenght] != '\0')
 	{
 		lenght++;
