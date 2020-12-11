@@ -1,0 +1,41 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
+
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always EXIT_SUCCESS.
+ */
+
+ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+ {
+    unsigned int counter = 0;
+	listint_t *delete, *temp;
+
+	if (head == NULL || *head == NULL)
+	{
+		return (-1);
+	}
+	temp = *head;
+	while (temp != NULL)
+	{
+		if (counter + 1 == index)
+		{
+		delete = temp->next;
+		temp->next = delete->next;
+		free(delete);
+		return (1);
+		}
+	if (index == 0)
+	{
+		*head = temp->next;
+		free(temp);
+		return (1);
+	}
+	temp = temp->next;
+	counter++;
+}
+return (-1);
+ }
