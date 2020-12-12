@@ -2,40 +2,36 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always EXIT_SUCCESS.
+ * delete_dnodeint_at_index - function to delete node at index
+ * @head: double pointer of dlistint_t type to head of linked list
+ * @index: index at which node will be deleted
+ * Return: 1 if successful or -1 if failed
  */
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+{
+	dlistint_t *p = NULL;
+	dlistint_t *c = NULL;
+	dlistint_t *n = *head;
+	unsigned int i = 0;
 
- int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
- {
-    unsigned int counter = 0;
-	listint_t *delete, *temp;
-
-	if (head == NULL || *head == NULL)
+	while (n)
 	{
-		return (-1);
-	}
-	temp = *head;
-	while (temp != NULL)
-	{
-		if (counter + 1 == index)
+		p = c;
+		c = n;
+		n = n->next;
+		if (i == index)
 		{
-		delete = temp->next;
-		temp->next = delete->next;
-		free(delete);
-		return (1);
+			if (index != 0)
+				p->next = n;
+			if (n)
+				n->prev = p;
+			if (index == 0)
+				*head = n;
+			free(c);
+			return (1);
 		}
-	if (index == 0)
-	{
-		*head = temp->next;
-		free(temp);
-		return (1);
+		i++;
 	}
-	temp = temp->next;
-	counter++;
+	return (-1);
 }
-return (-1);
- }
