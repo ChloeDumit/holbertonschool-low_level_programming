@@ -19,6 +19,8 @@ unsigned int i = 0;
 if (new == NULL)
 return (NULL);
 new->n = n;
+new->prev = NULL;
+new->next = NULL;
 if (*h == NULL)
 {
 *h = new;
