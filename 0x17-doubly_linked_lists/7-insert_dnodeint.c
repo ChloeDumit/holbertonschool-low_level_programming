@@ -30,10 +30,7 @@ return (new);
 temp = *h;
 if (idx == 0)
 {
-new->next = temp;
-new->prev = NULL;
-*h = new;
-return (new);
+return (add_dnodeint(h, n));
 }
 while (i != (idx - 1))
 {
