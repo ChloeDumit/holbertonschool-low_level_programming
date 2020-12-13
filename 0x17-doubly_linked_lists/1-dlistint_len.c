@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- *dlist_len - return number of elements
+ *dlistint_len - return number of elements
  *@h: head element
  *Return: number of nodes
  */
