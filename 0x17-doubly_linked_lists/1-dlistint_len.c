@@ -3,20 +3,20 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- *dlist_len - return number of elements
+ *dlistint_len - return number of elements
  *@h: head element
  *Return: number of nodes
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	unsigned int i;
-	
-    i = 0;
+unsigned int i;
 
-	while(h)
-	{
-        h = h->next;
-		i++;
-	}
-	return (i);
+i = 0;
+
+while (h)
+{
+	h = h->next;
+	i++;
+}
+return (i);
 }
