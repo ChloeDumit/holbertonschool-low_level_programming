@@ -26,7 +26,6 @@ free(tmp2->key);
 free(tmp2->value);
 free(tmp2);
 tmp2 = NULL;
-free(tmp);
 }
 }
 }
