@@ -1,33 +1,33 @@
-  
 #include "hash_tables.h"
-
 /**
- * hash_table_create - check the code for Holberton School students.
- * @size: size of table
- * Return: Always EXIT_SUCCESS.
+ * hash_table_delete - function that adds an element to the hash table
+ * @ht: is the hash table you want to add or update the key/value to
+ * Return: 1 if it succeeded, 0 otherwise
  */
-
-hash_table_t *hash_table_create(unsigned long int size)
+void hash_table_delete(hash_table_t *ht)
 {
-	hash_table_t *tabla;
+unsigned int i = 0;
+hash_node_t *tmp, *tmp2;
 
-	if (size < 1)
-		{
-		return (NULL);
-		}
+if (ht == NULL)
+return;
 
-tabla = malloc(sizeof(hash_table_t));
-	if (tabla == NULL)
-		{
-		return (NULL);
-		}
-
-	tabla->array = malloc(size * sizeof(hash_node_t **));
-	if (tabla->array == NULL)
-		{
-		return (NULL);
-		}
-
-	tabla->size = size;
-	return (tabla);
+for (i = 0; i < ht->size; i++)
+{
+if (ht->array[i] != NULL)
+{
+for (tmp = ht->array[i]; tmp;)
+{
+tmp2 = tmp;
+tmp = tmp->next;
+free(tmp2->key);
+free(tmp2->value);
+free(tmp2);
+tmp2 = NULL;
+}
+}
+}
+free(ht->array);
+free(ht);
+ht = NULL;
 }
