@@ -22,9 +22,6 @@ if (ht->array == NULL)
 {
 return (NULL);
 }
-
 ht->size = size;
 return (ht);
-
-
 }
