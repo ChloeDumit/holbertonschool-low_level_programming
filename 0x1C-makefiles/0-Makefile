@@ -1,0 +1,5 @@
+
+#creates a file
+
+final:
+gcc main.c holberton.c -o holberton
