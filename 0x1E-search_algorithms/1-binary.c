@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "search_algos.h"
 /**
- *linear_search - linear search
+ *binary_search - linear search
  *@array: array
  *@size: size
  *@value: value
@@ -11,28 +11,30 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int low = 0;
-	int high = size - 1;
-	int mid;
-	int i;
+	unsigned int lowerLimit = 0;
+	unsigned int upperLimit = size - 1;
+	unsigned int middle, i;
 
-	while (low <= high)
+	if (array == NULL)
+		return (-1);
+	while (lowerLimit <= upperLimit)
 	{
 		printf("Searching in array: ");
-		for (i = 0; i < high; i++)
-		printf("%d, ", array[i]);
-		printf("%d\n", array[i]);
-
-		mid = low + (high - low) / 2;
-		if (array[mid] == value)
-			return (mid);
-
-		if (value > array[mid])
-			low = mid + 1;
-		else
-			high = mid - 1;
-
-
+		for (i = lowerLimit; i <= upperLimit; i++)
+		{
+			printf("%d", array[i]);
+			if (i < upperLimit)
+				printf(", ");
+			else
+				printf("\n");
+		}
+		middle = (lowerLimit + upperLimit) / 2;
+		if (array[middle] == value)
+			return (middle);
+		if (array[middle] < value)
+			lowerLimit = middle + 1;
+		if (array[middle] > value)
+			upperLimit = middle - 1;
 	}
 	return (-1);
 }
